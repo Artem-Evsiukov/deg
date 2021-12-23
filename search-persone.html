@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trader Stat</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__mobile"> 
+              <button class="btn-icon burger js-popup-opener" type="button" data-trigger="burger"><img src="images/burger.svg" alt="btn"></button><span class="header__text">Referal</span>
+            </div>
+            <div class="header__inner"><a class="logo active" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="13" viewBox="0 0 80 13">
+                  <g fill="none" fill-rule="evenodd">
+                    <g fill="#039CFC" fill-rule="nonzero">
+                      <g>
+                        <path d="M5.108 29.77V19.173H8.24v-1.767H0v1.767h3.132V29.77h1.976zm6.656 0v-3.974c0-1.996.588-3.532 2.616-3.532V20.32c-1.317 0-2.295.76-2.651 1.678V20.55H9.824v9.22h1.94zm6.995.23c1.156 0 1.904-.389 2.384-.918l.16.688h1.691v-5.952c0-2.014-.943-3.497-3.701-3.497-1.549 0-2.795.583-3.542 1.06l.747 1.342c.677-.371 1.567-.724 2.599-.724 1.228 0 1.975.636 1.975 1.695v.866c-.356-.318-1.157-.671-2.224-.671-2.136 0-3.595 1.254-3.595 3.038C15.253 28.78 16.8 30 18.759 30zm.409-1.537c-1.175 0-1.976-.67-1.976-1.59 0-.918.784-1.589 1.958-1.589 1.175 0 1.976.618 1.976 1.59 0 .953-.819 1.59-1.958 1.59zM29.01 30c1.798 0 2.74-1.113 2.99-1.43v1.2h1.833V17h-1.94v4.787c-.249-.407-1.246-1.466-3.008-1.466-2.651 0-4.413 2.013-4.413 4.857 0 2.826 1.886 4.822 4.538 4.822zm.196-1.696c-1.584 0-2.777-1.218-2.777-3.108 0-1.855 1.14-3.162 2.759-3.162 1.548 0 2.776 1.148 2.776 3.162 0 1.695-1.05 3.108-2.758 3.108zM40.276 30c2.207 0 3.435-1.254 3.88-2.014l-1.282-.953c-.356.512-1.157 1.289-2.563 1.289-1.655 0-2.847-1.06-2.883-2.702h6.995c.017-.16.017-.318.017-.477 0-2.897-1.655-4.822-4.467-4.822-2.545 0-4.52 2.013-4.52 4.875 0 2.79 1.922 4.804 4.823 4.804zm2.189-5.705h-4.966c.125-1.449 1.157-2.367 2.492-2.367s2.403.848 2.474 2.367zm5.482 5.475v-3.974c0-1.996.587-3.532 2.616-3.532V20.32c-1.317 0-2.296.76-2.652 1.678V20.55h-1.904v9.22h1.94zm7.492.23c2.456 0 3.97-1.554 3.97-3.62 0-3.887-5.643-3.445-5.643-5.883 0-.848.623-1.519 1.727-1.519 1.228 0 1.797.848 2.082 1.449l1.637-.725c-.302-.865-1.317-2.525-3.684-2.525-2.296 0-3.737 1.413-3.737 3.338 0 3.974 5.606 3.391 5.606 6.005 0 1.043-.747 1.66-1.869 1.66-1.37 0-2.1-.865-2.438-1.748l-1.673.777C51.791 28.304 52.894 30 55.44 30zm8.81-.106c.605 0 .943-.07.943-.07v-1.661s-.213.018-.373.018c-1.033 0-1.584-.318-1.584-1.749V22.14h1.886v-1.59h-1.886v-1.925h-1.922v1.925H60.28v1.59h1.033v3.992c0 2.26.676 3.762 2.936 3.762zm5.428.106c1.157 0 1.905-.389 2.385-.918l.16.688h1.691v-5.952c0-2.014-.943-3.497-3.702-3.497-1.548 0-2.794.583-3.541 1.06l.747 1.342c.676-.371 1.566-.724 2.599-.724 1.228 0 1.975.636 1.975 1.695v.866c-.356-.318-1.157-.671-2.225-.671-2.135 0-3.595 1.254-3.595 3.038 0 1.854 1.549 3.073 3.506 3.073zm.41-1.537c-1.175 0-1.976-.67-1.976-1.59 0-.918.783-1.589 1.958-1.589 1.175 0 1.975.618 1.975 1.59 0 .953-.818 1.59-1.957 1.59zm8.97 1.431c.605 0 .943-.07.943-.07v-1.661s-.214.018-.374.018c-1.032 0-1.584-.318-1.584-1.749V22.14h1.887v-1.59h-1.887v-1.925H76.12v1.925h-1.032v1.59h1.032v3.992c0 2.26.676 3.762 2.937 3.762z" transform="translate(-264 -41) translate(264 24)"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></a>
+              <div class="menu" data-popup="burger">
+                <div class="menu__wrap">
+                  <div class="menu__head">
+                    <div class="menu__head-item"> 
+                      <button class="btn-icon close js-popup-close" type="button"><img src="images/close.svg" alt="btn"></button><span class="menu__text">Menu</span>
+                    </div>
+                    <div class="menu__head-item"> <span class="menu__user">Max Danilov</span>
+                      <button class="btn-icon exit" type="button"><img src="images/exit.svg" alt="btn"></button>
+                    </div>
+                  </div>
+                  <nav class="nav">
+                    <ul class="nav__list"> 
+                      <li class="active"> <a href="index.html">Home </a></li>
+                      <li> <a href="signals.html">Signals </a></li>
+                      <li> <a href="brokers.html">Brokers </a></li>
+                      <li> <a href="blogs.html">Blog </a></li>
+                      <li> <a href="faq.html">FAQ </a></li>
+                      <li> <a href="about.html">About Us</a></li>
+                    </ul>
+                  </nav>
+                  <div class="menu__footer"> 
+                    <div class="footer">
+                      <div class="footer__wrap"> 
+                        <ul class="footer__list"> 
+                          <li> <a href="faq.html">FAQ </a></li>
+                          <li> <a href="about.html">About Us </a></li>
+                          <li> <a href="#">Contacts </a></li>
+                          <li> <a href="#">Privacy Policy</a></li>
+                          <li> <a href="#">Terms of Use</a></li>
+                        </ul><span class="footer__copy">Degram 2020. All Right Reserved</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn primary" type="button" data-trigger="login">Login</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="persone-section">
+          <div class="container"> 
+            <h1 class="section-title"> <span>Search Traders / </span>Sallie Pearson</h1>
+            <div class="vote-info mob js-info-content">
+              <div class="vote-info__wrap">
+                <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span>
+                  <button class="vote-info__close js-info-close" type="button"></button>
+                </div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+              </div>
+            </div>
+            <div class="search-table">
+              <div class="search-table__head">
+                <div class="search-table__title"> <span>Idea’s name</span></div>
+                <div class="search-table__title"> <span>Idea’s date</span>
+                  <button class="search-table__btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 10 18">
+                      <g fill="none" fill-opacity=".3" fill-rule="evenodd">
+                        <g fill="#000">
+                          <g>
+                            <path d="M151.252 29.29c.195 0 .387.058.55.166.461.304.588.925.284 1.386l-3.251 4.929c-.075.113-.171.21-.284.284-.461.304-1.082.177-1.386-.284l-3.251-4.93c-.108-.163-.166-.354-.166-.55 0-.552.448-1 1-1zm-2.701-9.345c.113.075.21.171.284.284l3.251 4.93c.304.46.177 1.08-.284 1.385-.163.108-.355.165-.55.165h-6.504c-.552 0-1-.448-1-1 0-.196.058-.387.166-.55l3.251-4.93c.304-.46.925-.588 1.386-.284z" transform="translate(-407.000000, -398.000000) translate(264.000000, 379.000000)"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="search-table__title"> <span>Successful / Not successful</span></div>
+                <div class="search-table__title"> <span>Vote</span></div>
+              </div>
+              <div class="search-table__items">
+                <div class="search-table__item"><span class="search-table__text">Website Hosting Reviews Free The Best Resource</span><span class="search-table__date">30 Sep 2021</span><span class="search-table__status search-table__status_succ">Successful</span>
+                  <div class="search-table__votes">
+                    <div class="btn tertiary">
+                      <div class="btn-img"><img src="images/add-green.svg" alt="icon"></div><span>432</span>
+                    </div>
+                    <div class="btn tertiary">
+                      <div class="btn-img"> <img src="images/sub-red.svg" alt="icon"></div><span>389</span>
+                    </div>
+                    <div class="search-table__info js-info-wrap">
+                      <div class="vote-info js-info-content">
+                        <div class="vote-info__wrap">
+                          <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span></div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+                        </div>
+                      </div>
+                      <button class="search-table__btn-icon js-info-btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#FFF" stroke="#E1E1E2" stroke-width="1.5" d="M12 .75c3.107 0 5.919 1.26 7.955 3.295C21.99 6.081 23.25 8.893 23.25 12s-1.26 5.919-3.295 7.955C17.919 21.99 15.107 23.25 12 23.25s-5.919-1.26-7.955-3.295C2.01 17.919.75 15.107.75 12s1.26-5.919 3.295-7.955C6.081 2.01 8.893.75 12 .75z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                          <path fill="#E1E1E2" d="M10.613 17.18v-5.494c0-.765.621-1.386 1.387-1.386s1.387.62 1.387 1.386v5.494c0 .766-.621 1.386-1.387 1.386s-1.387-.62-1.387-1.386zM12 8.787c-.674 0-1.282-.406-1.54-1.03-.258-.622-.115-1.339.361-1.816.477-.476 1.194-.619 1.817-.36.623.257 1.029.865 1.029 1.539 0 .92-.747 1.667-1.667 1.667z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-table__item"><span class="search-table__text">The Flash Tutorial</span><span class="search-table__date">02 Jul 2021</span><span class="search-table__status">Failed</span>
+                  <div class="search-table__votes">
+                    <div class="btn tertiary">
+                      <div class="btn-img"><img src="images/add-green.svg" alt="icon"></div><span>432</span>
+                    </div>
+                    <div class="btn tertiary">
+                      <div class="btn-img"> <img src="images/sub-red.svg" alt="icon"></div><span>389</span>
+                    </div>
+                    <div class="search-table__info js-info-wrap">
+                      <div class="vote-info js-info-content">
+                        <div class="vote-info__wrap">
+                          <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span></div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+                        </div>
+                      </div>
+                      <button class="search-table__btn-icon js-info-btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#FFF" stroke="#E1E1E2" stroke-width="1.5" d="M12 .75c3.107 0 5.919 1.26 7.955 3.295C21.99 6.081 23.25 8.893 23.25 12s-1.26 5.919-3.295 7.955C17.919 21.99 15.107 23.25 12 23.25s-5.919-1.26-7.955-3.295C2.01 17.919.75 15.107.75 12s1.26-5.919 3.295-7.955C6.081 2.01 8.893.75 12 .75z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                          <path fill="#E1E1E2" d="M10.613 17.18v-5.494c0-.765.621-1.386 1.387-1.386s1.387.62 1.387 1.386v5.494c0 .766-.621 1.386-1.387 1.386s-1.387-.62-1.387-1.386zM12 8.787c-.674 0-1.282-.406-1.54-1.03-.258-.622-.115-1.339.361-1.816.477-.476 1.194-.619 1.817-.36.623.257 1.029.865 1.029 1.539 0 .92-.747 1.667-1.667 1.667z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-table__item"><span class="search-table__text">How To Build A Pc</span><span class="search-table__date">23 May 2021</span><span class="search-table__status">Failed</span>
+                  <div class="search-table__votes">
+                    <div class="btn tertiary">
+                      <div class="btn-img"><img src="images/add.svg" alt="icon"></div><span>432</span>
+                    </div>
+                    <div class="btn tertiary">
+                      <div class="btn-img"> <img src="images/sub.svg" alt="icon"></div><span>389</span>
+                    </div>
+                    <div class="search-table__info js-info-wrap">
+                      <div class="vote-info js-info-content">
+                        <div class="vote-info__wrap">
+                          <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span></div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+                        </div>
+                      </div>
+                      <button class="search-table__btn-icon js-info-btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#FFF" stroke="#E1E1E2" stroke-width="1.5" d="M12 .75c3.107 0 5.919 1.26 7.955 3.295C21.99 6.081 23.25 8.893 23.25 12s-1.26 5.919-3.295 7.955C17.919 21.99 15.107 23.25 12 23.25s-5.919-1.26-7.955-3.295C2.01 17.919.75 15.107.75 12s1.26-5.919 3.295-7.955C6.081 2.01 8.893.75 12 .75z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                          <path fill="#E1E1E2" d="M10.613 17.18v-5.494c0-.765.621-1.386 1.387-1.386s1.387.62 1.387 1.386v5.494c0 .766-.621 1.386-1.387 1.386s-1.387-.62-1.387-1.386zM12 8.787c-.674 0-1.282-.406-1.54-1.03-.258-.622-.115-1.339.361-1.816.477-.476 1.194-.619 1.817-.36.623.257 1.029.865 1.029 1.539 0 .92-.747 1.667-1.667 1.667z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-table__item"><span class="search-table__text">How To Put Movies On Iphone</span><span class="search-table__date">15 Mar 2021</span><span class="search-table__status search-table__status_succ">Successful</span>
+                  <div class="search-table__votes">
+                    <div class="btn tertiary">
+                      <div class="btn-img"><img src="images/add-green.svg" alt="icon"></div><span>432</span>
+                    </div>
+                    <div class="btn tertiary">
+                      <div class="btn-img"> <img src="images/sub-red.svg" alt="icon"></div><span>389</span>
+                    </div>
+                    <div class="search-table__info js-info-wrap">
+                      <div class="vote-info js-info-content">
+                        <div class="vote-info__wrap">
+                          <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span></div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+                        </div>
+                      </div>
+                      <button class="search-table__btn-icon js-info-btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#FFF" stroke="#E1E1E2" stroke-width="1.5" d="M12 .75c3.107 0 5.919 1.26 7.955 3.295C21.99 6.081 23.25 8.893 23.25 12s-1.26 5.919-3.295 7.955C17.919 21.99 15.107 23.25 12 23.25s-5.919-1.26-7.955-3.295C2.01 17.919.75 15.107.75 12s1.26-5.919 3.295-7.955C6.081 2.01 8.893.75 12 .75z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                          <path fill="#E1E1E2" d="M10.613 17.18v-5.494c0-.765.621-1.386 1.387-1.386s1.387.62 1.387 1.386v5.494c0 .766-.621 1.386-1.387 1.386s-1.387-.62-1.387-1.386zM12 8.787c-.674 0-1.282-.406-1.54-1.03-.258-.622-.115-1.339.361-1.816.477-.476 1.194-.619 1.817-.36.623.257 1.029.865 1.029 1.539 0 .92-.747 1.667-1.667 1.667z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div class="search-table__item"><span class="search-table__text">How To Build A Pc</span><span class="search-table__date">23 May 2021</span><span class="search-table__status">Failed</span>
+                  <div class="search-table__votes">
+                    <div class="btn tertiary">
+                      <div class="btn-img"><img src="images/add-green.svg" alt="icon"></div><span>432</span>
+                    </div>
+                    <div class="btn tertiary">
+                      <div class="btn-img"> <img src="images/sub-red.svg" alt="icon"></div><span>389</span>
+                    </div>
+                    <div class="search-table__info js-info-wrap">
+                      <div class="vote-info js-info-content">
+                        <div class="vote-info__wrap">
+                          <div class="vote-info__head"> <span class="vote-info__title">Vote for Idea 🔥</span></div><span class="vote-info__text">Our automated algorithms have small prediction error. If you find inaccuracy in prediction result, you can vote to clarify it.</span>
+                        </div>
+                      </div>
+                      <button class="search-table__btn-icon js-info-btn" type="button">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                          <path fill="#FFF" stroke="#E1E1E2" stroke-width="1.5" d="M12 .75c3.107 0 5.919 1.26 7.955 3.295C21.99 6.081 23.25 8.893 23.25 12s-1.26 5.919-3.295 7.955C17.919 21.99 15.107 23.25 12 23.25s-5.919-1.26-7.955-3.295C2.01 17.919.75 15.107.75 12s1.26-5.919 3.295-7.955C6.081 2.01 8.893.75 12 .75z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                          <path fill="#E1E1E2" d="M10.613 17.18v-5.494c0-.765.621-1.386 1.387-1.386s1.387.62 1.387 1.386v5.494c0 .766-.621 1.386-1.387 1.386s-1.387-.62-1.387-1.386zM12 8.787c-.674 0-1.282-.406-1.54-1.03-.258-.622-.115-1.339.361-1.816.477-.476 1.194-.619 1.817-.36.623.257 1.029.865 1.029 1.539 0 .92-.747 1.667-1.667 1.667z" transform="translate(-1464.000000, -487.000000) translate(264.000000, 323.000000) translate(964.000000, 24.000000) translate(236.000000, 140.000000)"></path>
+                        </svg>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap"> 
+            <ul class="footer__list"> 
+              <li> <a href="faq.html">FAQ </a></li>
+              <li> <a href="about.html">About Us </a></li>
+              <li> <a href="#">Contacts </a></li>
+              <li> <a href="#">Privacy Policy</a></li>
+              <li> <a href="#">Terms of Use</a></li>
+            </ul><span class="footer__copy">Degram 2020. All Right Reserved</span>
+          </div>
+        </div>
+      </footer>
+      <div class="mask js-mask"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

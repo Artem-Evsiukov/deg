@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trader Stat</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="container">
+          <div class="header__wrap">
+            <div class="header__mobile"> 
+              <button class="btn-icon burger js-popup-opener" type="button" data-trigger="burger"><img src="images/burger.svg" alt="btn"></button><span class="header__text">Referal</span>
+            </div>
+            <div class="header__inner"><a class="logo active" href="index.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="80" height="13" viewBox="0 0 80 13">
+                  <g fill="none" fill-rule="evenodd">
+                    <g fill="#039CFC" fill-rule="nonzero">
+                      <g>
+                        <path d="M5.108 29.77V19.173H8.24v-1.767H0v1.767h3.132V29.77h1.976zm6.656 0v-3.974c0-1.996.588-3.532 2.616-3.532V20.32c-1.317 0-2.295.76-2.651 1.678V20.55H9.824v9.22h1.94zm6.995.23c1.156 0 1.904-.389 2.384-.918l.16.688h1.691v-5.952c0-2.014-.943-3.497-3.701-3.497-1.549 0-2.795.583-3.542 1.06l.747 1.342c.677-.371 1.567-.724 2.599-.724 1.228 0 1.975.636 1.975 1.695v.866c-.356-.318-1.157-.671-2.224-.671-2.136 0-3.595 1.254-3.595 3.038C15.253 28.78 16.8 30 18.759 30zm.409-1.537c-1.175 0-1.976-.67-1.976-1.59 0-.918.784-1.589 1.958-1.589 1.175 0 1.976.618 1.976 1.59 0 .953-.819 1.59-1.958 1.59zM29.01 30c1.798 0 2.74-1.113 2.99-1.43v1.2h1.833V17h-1.94v4.787c-.249-.407-1.246-1.466-3.008-1.466-2.651 0-4.413 2.013-4.413 4.857 0 2.826 1.886 4.822 4.538 4.822zm.196-1.696c-1.584 0-2.777-1.218-2.777-3.108 0-1.855 1.14-3.162 2.759-3.162 1.548 0 2.776 1.148 2.776 3.162 0 1.695-1.05 3.108-2.758 3.108zM40.276 30c2.207 0 3.435-1.254 3.88-2.014l-1.282-.953c-.356.512-1.157 1.289-2.563 1.289-1.655 0-2.847-1.06-2.883-2.702h6.995c.017-.16.017-.318.017-.477 0-2.897-1.655-4.822-4.467-4.822-2.545 0-4.52 2.013-4.52 4.875 0 2.79 1.922 4.804 4.823 4.804zm2.189-5.705h-4.966c.125-1.449 1.157-2.367 2.492-2.367s2.403.848 2.474 2.367zm5.482 5.475v-3.974c0-1.996.587-3.532 2.616-3.532V20.32c-1.317 0-2.296.76-2.652 1.678V20.55h-1.904v9.22h1.94zm7.492.23c2.456 0 3.97-1.554 3.97-3.62 0-3.887-5.643-3.445-5.643-5.883 0-.848.623-1.519 1.727-1.519 1.228 0 1.797.848 2.082 1.449l1.637-.725c-.302-.865-1.317-2.525-3.684-2.525-2.296 0-3.737 1.413-3.737 3.338 0 3.974 5.606 3.391 5.606 6.005 0 1.043-.747 1.66-1.869 1.66-1.37 0-2.1-.865-2.438-1.748l-1.673.777C51.791 28.304 52.894 30 55.44 30zm8.81-.106c.605 0 .943-.07.943-.07v-1.661s-.213.018-.373.018c-1.033 0-1.584-.318-1.584-1.749V22.14h1.886v-1.59h-1.886v-1.925h-1.922v1.925H60.28v1.59h1.033v3.992c0 2.26.676 3.762 2.936 3.762zm5.428.106c1.157 0 1.905-.389 2.385-.918l.16.688h1.691v-5.952c0-2.014-.943-3.497-3.702-3.497-1.548 0-2.794.583-3.541 1.06l.747 1.342c.676-.371 1.566-.724 2.599-.724 1.228 0 1.975.636 1.975 1.695v.866c-.356-.318-1.157-.671-2.225-.671-2.135 0-3.595 1.254-3.595 3.038 0 1.854 1.549 3.073 3.506 3.073zm.41-1.537c-1.175 0-1.976-.67-1.976-1.59 0-.918.783-1.589 1.958-1.589 1.175 0 1.975.618 1.975 1.59 0 .953-.818 1.59-1.957 1.59zm8.97 1.431c.605 0 .943-.07.943-.07v-1.661s-.214.018-.374.018c-1.032 0-1.584-.318-1.584-1.749V22.14h1.887v-1.59h-1.887v-1.925H76.12v1.925h-1.032v1.59h1.032v3.992c0 2.26.676 3.762 2.937 3.762z" transform="translate(-264 -41) translate(264 24)"></path>
+                      </g>
+                    </g>
+                  </g>
+                </svg></a>
+              <div class="menu" data-popup="burger">
+                <div class="menu__wrap">
+                  <div class="menu__head">
+                    <div class="menu__head-item"> 
+                      <button class="btn-icon close js-popup-close" type="button"><img src="images/close.svg" alt="btn"></button><span class="menu__text">Menu</span>
+                    </div>
+                    <div class="menu__head-item"> <span class="menu__user">Max Danilov</span>
+                      <button class="btn-icon exit" type="button"><img src="images/exit.svg" alt="btn"></button>
+                    </div>
+                  </div>
+                  <nav class="nav">
+                    <ul class="nav__list"> 
+                      <li class="active"> <a href="index.html">Home </a></li>
+                      <li> <a href="signals.html">Signals </a></li>
+                      <li> <a href="brokers.html">Brokers </a></li>
+                      <li> <a href="blogs.html">Blog </a></li>
+                      <li> <a href="faq.html">FAQ </a></li>
+                      <li> <a href="about.html">About Us</a></li>
+                    </ul>
+                  </nav>
+                  <div class="menu__footer"> 
+                    <div class="footer">
+                      <div class="footer__wrap"> 
+                        <ul class="footer__list"> 
+                          <li> <a href="faq.html">FAQ </a></li>
+                          <li> <a href="about.html">About Us </a></li>
+                          <li> <a href="#">Contacts </a></li>
+                          <li> <a href="#">Privacy Policy</a></li>
+                          <li> <a href="#">Terms of Use</a></li>
+                        </ul><span class="footer__copy">Degram 2020. All Right Reserved</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="btn primary" type="button" data-trigger="login">Login</button>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="signals-section line">
+          <div class="container"> 
+            <div class="signals-wrap"> 
+              <div class="section-inner"> 
+                <h1 class="section-title">Degram Signals for Crypto & Forex</h1>
+                <p class="base-text">Degram is a team of traders and analysts with 11 years of experience in the financial markets.</p>
+              </div>
+              <div class="img-wrap"><img src="images/signals/social.png" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="table-section"> 
+          <div class="container"> 
+            <div class="section-inner"> 
+              <h2 class="section-title">Header Text Here</h2><span class="base-text">Want to trade with the best? Join the Degram team now. Start winning your trades.</span>
+            </div>
+            <div class="trader-table trader-table_only">
+              <div class="trader-table__head">
+                <div class="trader-table__title"> <span>Top Traders</span></div>
+                <div class="trader-table__title"> <span>Trader name</span></div>
+                <div class="trader-table__title"> <span>Number of ideas</span>
+                  <button class="trader-table__btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 10 18">
+                      <g fill="none" fill-opacity=".3" fill-rule="evenodd">
+                        <g fill="#000">
+                          <g>
+                            <path d="M151.252 29.29c.195 0 .387.058.55.166.461.304.588.925.284 1.386l-3.251 4.929c-.075.113-.171.21-.284.284-.461.304-1.082.177-1.386-.284l-3.251-4.93c-.108-.163-.166-.354-.166-.55 0-.552.448-1 1-1zm-2.701-9.345c.113.075.21.171.284.284l3.251 4.93c.304.46.177 1.08-.284 1.385-.163.108-.355.165-.55.165h-6.504c-.552 0-1-.448-1-1 0-.196.058-.387.166-.55l3.251-4.93c.304-.46.925-.588 1.386-.284z" transform="translate(-407.000000, -398.000000) translate(264.000000, 379.000000)"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="trader-table__title"> <span>Successful ideas</span>
+                  <button class="trader-table__btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 10 18">
+                      <g fill="none" fill-opacity=".3" fill-rule="evenodd">
+                        <g fill="#000">
+                          <g>
+                            <path d="M151.252 29.29c.195 0 .387.058.55.166.461.304.588.925.284 1.386l-3.251 4.929c-.075.113-.171.21-.284.284-.461.304-1.082.177-1.386-.284l-3.251-4.93c-.108-.163-.166-.354-.166-.55 0-.552.448-1 1-1zm-2.701-9.345c.113.075.21.171.284.284l3.251 4.93c.304.46.177 1.08-.284 1.385-.163.108-.355.165-.55.165h-6.504c-.552 0-1-.448-1-1 0-.196.058-.387.166-.55l3.251-4.93c.304-.46.925-.588 1.386-.284z" transform="translate(-407.000000, -398.000000) translate(264.000000, 379.000000)"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+                <div class="trader-table__title"> <span>Successful percentage</span>
+                  <button class="trader-table__btn" type="button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="8" height="15" viewBox="0 0 10 18">
+                      <g fill="none" fill-opacity=".3" fill-rule="evenodd">
+                        <g fill="#000">
+                          <g>
+                            <path d="M151.252 29.29c.195 0 .387.058.55.166.461.304.588.925.284 1.386l-3.251 4.929c-.075.113-.171.21-.284.284-.461.304-1.082.177-1.386-.284l-3.251-4.93c-.108-.163-.166-.354-.166-.55 0-.552.448-1 1-1zm-2.701-9.345c.113.075.21.171.284.284l3.251 4.93c.304.46.177 1.08-.284 1.385-.163.108-.355.165-.55.165h-6.504c-.552 0-1-.448-1-1 0-.196.058-.387.166-.55l3.251-4.93c.304-.46.925-.588 1.386-.284z" transform="translate(-407.000000, -398.000000) translate(264.000000, 379.000000)"></path>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div class="trader-table__items">
+                <div class="trader-table__item"><a class="trader-table__link" href="#">Charlotte Hines</a>
+                  <div class="trader-table__info"><span class="trader-table__subtitle"> Number of ideas</span><span class="trader-table__text">54 937</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful ideas</span><span class="trader-table__text">550</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful percentage</span><span class="trader-table__text">37 %</span></div>
+                </div>
+                <div class="trader-table__item"><a class="trader-table__link" href="#">Allen Wilkerson</a>
+                  <div class="trader-table__info"><span class="trader-table__subtitle"> Number of ideas</span><span class="trader-table__text">6 899</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful ideas</span><span class="trader-table__text">151</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful percentage</span><span class="trader-table__text">46 %</span></div>
+                </div>
+                <div class="trader-table__item"><a class="trader-table__link" href="#">Flora Moody</a>
+                  <div class="trader-table__info"><span class="trader-table__subtitle"> Number of ideas</span><span class="trader-table__text">14 121</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful ideas</span><span class="trader-table__text">330</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful percentage</span><span class="trader-table__text">61 %</span></div>
+                </div>
+                <div class="trader-table__item"><a class="trader-table__link" href="#">Darrell Burgess</a>
+                  <div class="trader-table__info"><span class="trader-table__subtitle"> Number of ideas</span><span class="trader-table__text">48 106</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful ideas</span><span class="trader-table__text">687</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful percentage</span><span class="trader-table__text">59 %</span></div>
+                </div>
+                <div class="trader-table__item"><a class="trader-table__link" href="#">Frank Warren</a>
+                  <div class="trader-table__info"><span class="trader-table__subtitle"> Number of ideas</span><span class="trader-table__text">19 296</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful ideas</span><span class="trader-table__text">181</span></div>
+                  <div class="trader-table__info"><span class="trader-table__subtitle">Successful percentage</span><span class="trader-table__text">19 %</span></div>
+                </div>
+              </div>
+            </div>
+            <button class="btn primary big" type="button">Show Full		</button>
+          </div>
+        </section>
+        <section class="analytics-section">
+          <div class="container"> 
+            <div class="section-inner"> 
+              <h2 class="section-title">Degram Analytics</h2>
+              <p class="base-text">We are top analysts in one of the best forex platforms. 2 million visits per day thousands of traders and only a few go to the TOP.</p>
+            </div>
+            <div class="img-wrap"> <img src="images/signals/analytics.svg" alt=""></div>
+            <button class="btn primary" type="button">Join Today</button>
+          </div>
+        </section>
+        <section class="plans-section">
+          <div class="container">
+            <div class="plans-head">
+              <h2 class="section-title">Premium Plans</h2><span class="base-text">Want to trade with the best? Join the Degram team now. Start winning your trades.</span>
+            </div>
+            <div class="tabs js-tab-wrap">
+              <ul class="tabs__buttons js-tab-buttons"> 
+                <li class="active">Forex Signals</li>
+                <li>Index Signals</li>
+                <li>Forex Education</li>
+              </ul>
+              <div class="tabs__body"> 
+                <div class="tabs__content js-tab-content active">
+                  <div class="swiper-container js-slide-forex">
+                    <div class="swiper-wrapper offer-wrap"> 
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="103" viewBox="0 0 102 103">
+                                  <defs>
+                                    <linearGradient id="v6i8ec8x3c" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF"></stop>
+                                      <stop offset="100%" stop-color="#039CFC" stop-opacity=".5"></stop>
+                                    </linearGradient>
+                                    <filter id="4ljomh2j1a" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="0hcwyvpyrb" d="M231.035 355.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704c-.54-1.146-1.657-1.871-2.878-1.871-1.222 0-2.338.725-2.879 1.87l-7.414 15.705c-.459.992-1.363 1.677-2.407 1.824l-16.573 2.535c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g transform="translate(-413 -3008) translate(264 2680)">
+                                        <use fill="#000" filter="url(#4ljomh2j1a)" xlink:href="#0hcwyvpyrb"></use>
+                                        <use fill="#FFF" xlink:href="#0hcwyvpyrb"></use>
+                                        <path fill="url(#v6i8ec8x3c)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".2" d="M199.983 328.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0l-12.038 12.239c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Easy Level</span><span class="offer__subtitle">1 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">89</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li class="off">Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 134">
+                                  <defs>
+                                    <filter id="4z9gempuga" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="xnnsx4n3ed" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="otiv83yftb" d="M103.336 48.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C83.595 30.5 82.828 30 81.988 30c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L61.863 45.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="1e0gnebsje" d="M73.035 37.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704C44.321 10.725 43.204 10 41.983 10c-1.222 0-2.338.725-2.879 1.87L31.69 27.576c-.459.992-1.363 1.677-2.407 1.824L12.71 31.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="dhov3vvb7c" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF" stop-opacity=".5"></stop>
+                                      <stop offset="100%" stop-opacity=".2"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g opacity=".5" transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(20 82 52)">
+                                            <use fill="#000" filter="url(#4z9gempuga)" xlink:href="#otiv83yftb"></use>
+                                            <use fill="#E9E9E9" xlink:href="#otiv83yftb"></use>
+                                            <use fill="url(#dhov3vvb7c)" xlink:href="#otiv83yftb"></use>
+                                          </g>
+                                          <g transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(-20 42 42)">
+                                            <use fill="#000" filter="url(#xnnsx4n3ed)" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="#E9E9E9" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="url(#dhov3vvb7c)" xlink:href="#1e0gnebsje"></use>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Medium Level</span><span class="offer__subtitle">6 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">390</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer offer_vip">
+                          <div class="offer__wrap">
+                            <div class="save-text"> <span>Save €225</span></div>
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg width="164" height="104" viewBox="0 0 164 104">
+                                  <defs>
+                                    <filter id="1nxc8e19va" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="hyl3sdm4id" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="qppmbqnl9f" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="46tof919gb" d="M43.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C23.595 20.5 22.828 20 21.988 20c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L1.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032L7.596 61.313c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="2fix73adae" d="M123.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797c-.372-.787-1.139-1.286-1.979-1.286-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L81.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="3qgq3ckf5g" d="M93.035 27.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824L64.861 1.871C64.321.725 63.204 0 61.983 0c-1.222 0-2.338.725-2.879 1.87L51.69 17.576c-.459.992-1.363 1.677-2.407 1.824L32.71 21.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="53tycnzgpc" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFD500"></stop>
+                                      <stop offset="100%" stop-color="#FFB500"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                            <use fill="#000" filter="url(#1nxc8e19va)" xlink:href="#46tof919gb"></use>
+                                            <path fill="url(#53tycnzgpc)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M21.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0L1.02 38.642c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0L20.461 21.5c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                          </g>
+                                          <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                            <use fill="#000" filter="url(#hyl3sdm4id)" xlink:href="#2fix73adae"></use>
+                                            <path fill="url(#53tycnzgpc)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M101.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0l-8.252-8.414c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0l5.097-10.796c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                          </g>
+                                          <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                            <use fill="#000" filter="url(#qppmbqnl9f)" xlink:href="#3qgq3ckf5g"></use>
+                                            <path fill="url(#53tycnzgpc)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M61.983.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0L80.64 39.513c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Hard Level</span><span class="offer__subtitle">12 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">590</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li>Trading signals</li>
+                                <li>Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content js-tab-content active">
+                  <div class="swiper-container js-slide-index">
+                    <div class="swiper-wrapper offer-wrap"> 
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="103" viewBox="0 0 102 103">
+                                  <defs>
+                                    <linearGradient id="v6i8ec8x3c1" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF"></stop>
+                                      <stop offset="100%" stop-color="#039CFC" stop-opacity=".5"></stop>
+                                    </linearGradient>
+                                    <filter id="4ljomh2j1a1" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="0hcwyvpyrb" d="M231.035 355.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704c-.54-1.146-1.657-1.871-2.878-1.871-1.222 0-2.338.725-2.879 1.87l-7.414 15.705c-.459.992-1.363 1.677-2.407 1.824l-16.573 2.535c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g transform="translate(-413 -3008) translate(264 2680)">
+                                        <use fill="#000" filter="url(#4ljomh2j1a1)" xlink:href="#0hcwyvpyrb"></use>
+                                        <use fill="#FFF" xlink:href="#0hcwyvpyrb"></use>
+                                        <path fill="url(#v6i8ec8x3c1)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".2" d="M199.983 328.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0l-12.038 12.239c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Easy Level</span><span class="offer__subtitle">1 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">89</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li class="off">Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 134">
+                                  <defs>
+                                    <filter id="4z9gempuga1" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="xnnsx4n3ed1" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="otiv83yftb" d="M103.336 48.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C83.595 30.5 82.828 30 81.988 30c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L61.863 45.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="1e0gnebsje" d="M73.035 37.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704C44.321 10.725 43.204 10 41.983 10c-1.222 0-2.338.725-2.879 1.87L31.69 27.576c-.459.992-1.363 1.677-2.407 1.824L12.71 31.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="dhov3vvb7c1" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF" stop-opacity=".5"></stop>
+                                      <stop offset="100%" stop-opacity=".2"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g opacity=".5" transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(20 82 52)">
+                                            <use fill="#000" filter="url(#4z9gempuga1)" xlink:href="#otiv83yftb"></use>
+                                            <use fill="#E9E9E9" xlink:href="#otiv83yftb"></use>
+                                            <use fill="url(#dhov3vvb7c1)" xlink:href="#otiv83yftb"></use>
+                                          </g>
+                                          <g transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(-20 42 42)">
+                                            <use fill="#000" filter="url(#xnnsx4n3ed1)" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="#E9E9E9" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="url(#dhov3vvb7c1)" xlink:href="#1e0gnebsje"></use>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Medium Level</span><span class="offer__subtitle">6 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">390</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer offer_vip">
+                          <div class="offer__wrap">
+                            <div class="save-text"> <span>Save €225</span></div>
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164" height="104" viewBox="0 0 164 104">
+                                  <defs>
+                                    <filter id="1nxc8e19va5" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="hyl3sdm4id5" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="qppmbqnl9f5" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="46tof919gb" d="M43.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C23.595 20.5 22.828 20 21.988 20c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L1.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032L7.596 61.313c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="2fix73adae" d="M123.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797c-.372-.787-1.139-1.286-1.979-1.286-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L81.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="3qgq3ckf5g" d="M93.035 27.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824L64.861 1.871C64.321.725 63.204 0 61.983 0c-1.222 0-2.338.725-2.879 1.87L51.69 17.576c-.459.992-1.363 1.677-2.407 1.824L32.71 21.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="53tycnzgpc5" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFD500"></stop>
+                                      <stop offset="100%" stop-color="#FFB500"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                            <use fill="#000" filter="url(#1nxc8e19va5)" xlink:href="#46tof919gb"></use>
+                                            <path fill="url(#53tycnzgpc5)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M21.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0L1.02 38.642c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0L20.461 21.5c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                            <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                              <use fill="#000" filter="url(#hyl3sdm4id5)" xlink:href="#2fix73adae"></use>
+                                              <path fill="url(#53tycnzgpc5)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M101.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0l-8.252-8.414c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0l5.097-10.796c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                            </g>
+                                            <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                              <use fill="#000" filter="url(#qppmbqnl9f5)" xlink:href="#3qgq3ckf5g"></use>
+                                              <path fill="url(#53tycnzgpc5)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M61.983.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0L80.64 39.513c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Hard Level</span><span class="offer__subtitle">12 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">590</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li>Trading signals</li>
+                                <li>Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabs__content js-tab-content active">
+                  <div class="swiper-container js-slide-education">
+                    <div class="swiper-wrapper offer-wrap"> 
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="102" height="103" viewBox="0 0 102 103">
+                                  <defs>
+                                    <linearGradient id="v6i8ec8x3c4" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF"></stop>
+                                      <stop offset="100%" stop-color="#039CFC" stop-opacity=".5"></stop>
+                                    </linearGradient>
+                                    <filter id="4ljomh2j1a4" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="0hcwyvpyrb" d="M231.035 355.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704c-.54-1.146-1.657-1.871-2.878-1.871-1.222 0-2.338.725-2.879 1.87l-7.414 15.705c-.459.992-1.363 1.677-2.407 1.824l-16.573 2.535c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g transform="translate(-413 -3008) translate(264 2680)">
+                                        <use fill="#000" filter="url(#4ljomh2j1a4)" xlink:href="#0hcwyvpyrb"></use>
+                                        <use fill="#FFF" xlink:href="#0hcwyvpyrb"></use>
+                                        <path fill="url(#v6i8ec8x3c4)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".2" d="M199.983 328.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0l-12.038 12.239c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Easy Level</span><span class="offer__subtitle">1 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">89</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li class="off">Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap"> 
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="147" height="134" viewBox="0 0 147 134">
+                                  <defs>
+                                    <filter id="4z9gempuga3" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="xnnsx4n3ed3" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="otiv83yftb" d="M103.336 48.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C83.595 30.5 82.828 30 81.988 30c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L61.863 45.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="1e0gnebsje" d="M73.035 37.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824l-7.449-15.704C44.321 10.725 43.204 10 41.983 10c-1.222 0-2.338.725-2.879 1.87L31.69 27.576c-.459.992-1.363 1.677-2.407 1.824L12.71 31.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="dhov3vvb7c3" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFF" stop-opacity=".5"></stop>
+                                      <stop offset="100%" stop-opacity=".2"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g opacity=".5" transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(20 82 52)">
+                                            <use fill="#000" filter="url(#4z9gempuga3)" xlink:href="#otiv83yftb"></use>
+                                            <use fill="#E9E9E9" xlink:href="#otiv83yftb"></use>
+                                            <use fill="url(#dhov3vvb7c3)" xlink:href="#otiv83yftb"></use>
+                                          </g>
+                                          <g transform="translate(-826 -2992) translate(264 2680) translate(580 318) rotate(-20 42 42)">
+                                            <use fill="#000" filter="url(#xnnsx4n3ed3)" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="#E9E9E9" xlink:href="#1e0gnebsje"></use>
+                                            <use fill="url(#dhov3vvb7c3)" xlink:href="#1e0gnebsje"></use>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Medium Level</span><span class="offer__subtitle">6 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">390</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li class="off">Trading signals</li>
+                                <li class="off">Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="offer">
+                          <div class="offer__wrap offer_vip">
+                            <div class="save-text"> <span>Save €225</span></div>
+                            <div class="offer__head"> 
+                              <div class="img-wrap"> 
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="164" height="104" viewBox="0 0 164 104">
+                                  <defs>
+                                    <filter id="1nxc8e19va6" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="hyl3sdm4id6" width="281.8%" height="281.8%" x="-90.9%" y="-45.5%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <filter id="qppmbqnl9f6" width="225%" height="225%" x="-62.5%" y="-31.2%" filterUnits="objectBoundingBox">
+                                      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+                                      <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="10"></feGaussianBlur>
+                                      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+                                      <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.05 0"></feColorMatrix>
+                                    </filter>
+                                    <path id="46tof919gb" d="M43.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797C23.595 20.5 22.828 20 21.988 20c-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L1.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032L7.596 61.313c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="2fix73adae" d="M123.336 38.992c.597-.607.813-1.515.56-2.344-.255-.83-.936-1.437-1.759-1.568l-11.394-1.743c-.718-.101-1.34-.572-1.655-1.254l-5.121-10.797c-.372-.787-1.139-1.286-1.979-1.286-.84 0-1.607.499-1.979 1.286l-5.097 10.797c-.316.682-.937 1.153-1.655 1.254L81.863 35.08c-.823.131-1.504.739-1.758 1.568-.254.829-.038 1.737.559 2.344l8.251 8.414c.517.528.755 1.287.636 2.032l-1.955 11.875c-.143.862.195 1.735.873 2.25.678.514 1.577.58 2.317.17l10.207-5.605c.642-.35 1.408-.35 2.05 0l10.195 5.605c.736.382 1.615.301 2.277-.208.662-.51.996-1.364.865-2.212l-1.955-11.875c-.119-.745.119-1.504.636-2.032l8.275-8.414z"></path>
+                                    <path id="3qgq3ckf5g" d="M93.035 27.625c.867-.884 1.182-2.204.813-3.41-.37-1.206-1.36-2.09-2.558-2.28l-16.573-2.536c-1.044-.147-1.948-.832-2.407-1.824L64.861 1.871C64.321.725 63.204 0 61.983 0c-1.222 0-2.338.725-2.879 1.87L51.69 17.576c-.459.992-1.363 1.677-2.407 1.824L32.71 21.934c-1.197.192-2.188 1.075-2.558 2.28-.37 1.207-.054 2.527.813 3.41l12.002 12.24c.753.767 1.098 1.87.925 2.954l-2.844 17.273c-.208 1.255.285 2.525 1.271 3.273.986.748 2.293.844 3.37.247l14.846-8.153c.934-.509 2.048-.509 2.983 0l14.828 8.153c1.071.556 2.35.44 3.312-.302.963-.742 1.448-1.984 1.259-3.218l-2.844-17.273c-.173-1.083.172-2.187.925-2.954l12.037-12.24z"></path>
+                                    <linearGradient id="53tycnzgpc6" x1="50%" x2="50%" y1="0%" y2="100%">
+                                      <stop offset="0%" stop-color="#FFD500"></stop>
+                                      <stop offset="100%" stop-color="#FFB500"></stop>
+                                    </linearGradient>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <g fill-rule="nonzero">
+                                      <g>
+                                        <g>
+                                          <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                            <use fill="#000" filter="url(#1nxc8e19va6)" xlink:href="#46tof919gb"></use>
+                                            <path fill="url(#53tycnzgpc6)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M21.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0L1.02 38.642c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0L20.461 21.5c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                            <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                              <use fill="#000" filter="url(#hyl3sdm4id6)" xlink:href="#2fix73adae"></use>
+                                              <path fill="url(#53tycnzgpc6)" fill-opacity=".5" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M101.988 20.5c.322 0 .63.096.893.267.267.174.489.426.634.733h0l5.12 10.793c.388.84 1.156 1.415 2.033 1.538h0l11.39 1.742c.316.051.605.194.839.402.238.213.42.495.52.82.1.327.108.67.031.992-.076.319-.234.617-.468.855h0l-8.276 8.414c-.626.639-.917 1.557-.772 2.463h0l1.954 11.87c.052.335.012.672-.107.975-.117.299-.31.565-.57.765-.253.195-.548.309-.85.336-.3.028-.606-.03-.886-.173h0l-10.19-5.603c-.793-.432-1.737-.432-2.531 0h0l-10.208 5.606c-.283.157-.596.223-.903.2-.308-.022-.61-.134-.87-.33-.264-.202-.462-.473-.58-.778-.12-.308-.159-.651-.102-.993h0l1.956-11.878c.144-.903-.147-1.821-.773-2.46h0l-8.252-8.414c-.234-.238-.392-.536-.468-.855-.077-.321-.07-.665.03-.993.1-.324.283-.606.521-.819.234-.208.523-.35.836-.401h0l11.388-1.742c.882-.124 1.65-.7 2.037-1.536h0l5.097-10.796c.145-.307.367-.559.634-.733.263-.17.571-.267.893-.267z"></path>
+                                            </g>
+                                            <g transform="translate(-1246 -3008) translate(264 2680) translate(1002 328)">
+                                              <use fill="#000" filter="url(#qppmbqnl9f6)" xlink:href="#3qgq3ckf5g"></use>
+                                              <path fill="url(#53tycnzgpc6)" fill-rule="evenodd" stroke="#FFF" stroke-linejoin="square" stroke-opacity=".15" d="M61.983.5c.512 0 1.003.153 1.422.425.424.276.774.673 1.004 1.16h0l7.447 15.7c.532 1.15 1.583 1.939 2.786 2.108h0l16.57 2.535c.502.08.962.307 1.334.64.378.336.666.78.824 1.293.158.517.17 1.058.049 1.564-.12.504-.371.973-.74 1.35h0L80.64 39.513c-.862.878-1.26 2.141-1.061 3.386h0l2.842 17.267c.082.528.019 1.058-.168 1.536-.185.473-.492.895-.901 1.21-.404.31-.874.491-1.356.535-.479.044-.968-.047-1.416-.278h0l-14.824-8.15c-1.085-.592-2.377-.592-3.463 0h0l-14.847 8.154c-.451.25-.95.355-1.44.32-.491-.037-.972-.215-1.386-.529-.419-.317-.732-.746-.919-1.228-.189-.486-.25-1.027-.16-1.565h0l2.844-17.275c.198-1.242-.2-2.505-1.062-3.383h0l-12.002-12.24c-.37-.376-.62-.845-.74-1.35-.121-.505-.11-1.046.048-1.563.158-.512.446-.957.824-1.294.372-.332.832-.559 1.331-.639h0l16.567-2.534c1.21-.17 2.26-.96 2.79-2.106h0l7.414-15.704c.23-.486.58-.883 1.004-1.159.42-.272.91-.425 1.423-.425z"></path>
+                                            </g>
+                                          </g>
+                                        </g>
+                                      </g>
+                                    </g>
+                                  </g>
+                                </svg>
+                              </div>
+                            </div>
+                            <div class="offer__body"> <span class="offer__title">Hard Level</span><span class="offer__subtitle">12 month room access</span>
+                              <div class="offer__sum"> <span class="offer__val">€</span><span class="offer__num">590</span><span class="offer__text">/ month</span></div>
+                              <ul class="offer__list"> 
+                                <li>Trading room access</li>
+                                <li>Pro trading video academy</li>
+                                <li>Daily live trading sessions</li>
+                                <li>Trading signals</li>
+                                <li>Weekly hot-pick analysis</li>
+                              </ul>
+                            </div>
+                            <div class="offer__footer"> <a class="btn primary" href="#">Get Now</a></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="social-section">
+          <div class="container"> 
+            <div class="section-inner"> 
+              <h2 class="section-title">Premium Plans</h2>
+              <p class="base-text">Want to trade with the best? Join the Degram team now. Start winning your trades.</p>
+            </div>
+            <div class="social-wrap"> 
+              <div class="social">
+                <div class="social__wrap"> 
+                  <div class="social__img social__img-bg"><img src="images/signals/telegram.svg" alt=""></div>
+                  <p class="social__row"> Telegram</p>
+                  <p class="social__text">76 456 Subscribers</p>
+                  <button class="btn primary" type="button"> Join Now</button>
+                </div>
+              </div>
+              <div class="social">
+                <div class="social__wrap"> 
+                  <div class="social__img"> <img src="images/signals/instagram.svg" alt=""></div>
+                  <p class="social__row"> Telegram</p>
+                  <p class="social__text">31 037 Followers</p>
+                  <button class="btn primary" type="button">Join Now</button>
+                </div>
+              </div>
+              <div class="social">
+                <div class="social__wrap"> 
+                  <div class="social__img"> <img src="images/signals/whatsapp.svg" alt=""></div>
+                  <p class="social__row"> Telegram</p>
+                  <p class="social__text"> 21 188 Subscribers</p>
+                  <button class="btn primary" type="button">Join Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="contact-section">
+          <div class="container"> 
+            <div class="section-inner"> 
+              <h1 class="section-title">Contact Us</h1><span class="base-text">Leave us a message and we will reply you later</span>
+            </div>
+            <div class="contact-form">
+              <form class="form form_trader" action="#" name="feedback">
+                <div class="form__wrap"><span class="trader-title">Enter your email & Message</span>
+                  <div class="form__field"> 
+                    <div class="form__field-head"> 
+                      <label class="form__label">Email</label>
+                    </div>
+                    <input class="form__input" type="text">
+                  </div>
+                  <div class="form__field"> 
+                    <div class="form__field-head"> 
+                      <label class="form__label">Email</label>
+                    </div>
+                    <textarea class="form__textarea" name="feedback" cols="20" rows="5" placeholder="Enter text here..."></textarea>
+                  </div>
+                  <div class="form__footer">
+                    <button class="btn primary" type="submit">Submit</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__wrap"> 
+            <ul class="footer__list"> 
+              <li> <a href="faq.html">FAQ </a></li>
+              <li> <a href="about.html">About Us </a></li>
+              <li> <a href="#">Contacts </a></li>
+              <li> <a href="#">Privacy Policy</a></li>
+              <li> <a href="#">Terms of Use</a></li>
+            </ul><span class="footer__copy">Degram 2020. All Right Reserved</span>
+          </div>
+        </div>
+      </footer>
+      <div class="mask js-mask"></div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
